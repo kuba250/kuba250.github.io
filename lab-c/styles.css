@@ -1,3 +1,50 @@
 body {
   background-color: #e6f1fc;
 }
+
+/* AI (model Claude Opus 5.5) pomogło zrobić układ strony w siatce 2x2 */
+main {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  gap: 16px;
+}
+
+#map,
+#rasterMap {
+  width: 600px;
+  height: 300px;
+  border: 1px solid black;
+}
+
+#buttons {
+  grid-column: span 2;
+}
+
+#table {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  width: 604px;
+  height: 304px;
+  border: 2px dashed #7f7fe9;
+}
+
+/* AI (model Claude Opus 5.5) pomogło zrobić planszę 2x2 na puzzle */
+#board {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+#board div {
+  width: 300px;
+  height: 150px;
+  border: 2px dashed #7f7fe9;
+}
+
+.item {
+  display: block;
+  box-sizing: border-box;
+  width: 300px;
+  height: 150px;
+}
