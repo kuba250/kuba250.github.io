@@ -1,3 +1,42 @@
+/* Style wygenerowane przez AI (model Claude Fable 5.2) */
+
 body {
   background-color: #e6f1fc;
+  font-family: sans-serif;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#search {
+  display: flex;
+  gap: 8px;
+}
+
+#address {
+  flex: 1;
+}
+
+#forecast {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 8px;
+}
+
+.weather {
+  background-color: #2b4c7e;
+  color: white;
+  padding: 12px;
+  text-align: center;
+}
+
+.date,
+.temperature {
+  font-weight: bold;
+}
+
+.temperature {
+  font-size: 24px;
 }
